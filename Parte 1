@@ -30,23 +30,23 @@ public abstract class Animal
     }
 }
 
-public class Leao : Animal
+public class Gato : Animal
 {
     // Construtor que chama o construtor da classe base
-    public Leao(string nome, int idade) : base(nome, idade)
+    public Gato(string nome, int idade) : base(nome, idade)
     {
     }
 
     // Implementação do método abstrato EmitirSom()
     public override void EmitirSom()
     {
-        Console.WriteLine("O leão ruge: Roaaaar!");
+        Console.WriteLine("O Gato Mia: Miauu!");
     }
 
     // Sobrescrever o método Apresentar, se desejado
     public override void Apresentar()
     {
-        Console.WriteLine($"Eu sou o leão {Nome} e tenho {Idade} anos.");
+        Console.WriteLine($"Eu sou o Gato {Nome} e tenho {Idade} anos.");
     }
 }
 
@@ -136,12 +136,12 @@ class Program
         try
         {
             // Criando instâncias dos animais
-            Animal leao = new Leao("Simba", 5);
+            Animal Gato = new Gato("Remii", 5);
             Animal cachorro = new Cachorro("Rex", 3);
             Animal passaro = new Passaro("Piu", 2);
 
             // Adicionando animais ao zoológico
-            zoologico.AdicionarAnimal(leao);
+            zoologico.AdicionarAnimal(Gato);
             zoologico.AdicionarAnimal(cachorro);
             zoologico.AdicionarAnimal(passaro);
 
